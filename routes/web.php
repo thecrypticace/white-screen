@@ -11,10 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get("/", "CausesController@index");
 Route::get("/causes/permissions", "CausesController@permissions");
 Route::get("/causes/env", "CausesController@env");
 Route::get("/causes/app-key", "CausesController@appKey");
