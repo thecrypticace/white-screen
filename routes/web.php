@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get("/causes/permissions", "CausesController@permissions");
+Route::get("/causes/env", "CausesController@env");
+Route::get("/causes/app-key", "CausesController@appKey");
+Route::get("/causes/display-errors", "CausesController@displayErrors");
+Route::get("/causes/php", "CausesController@php");
+Route::get("/causes/composer", "CausesController@composer");
